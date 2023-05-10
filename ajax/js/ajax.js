@@ -5,6 +5,7 @@ function ajaxcall(){
     xhr.onload = function(){
         result = xhr.responseText;
         result = JSON.parse(result);
+        console.log(result);
         str = `<table><tr>`;
         for(key in result){
             str=str + `<th>${key}</th>`;            
